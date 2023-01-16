@@ -1,0 +1,19 @@
+.bids, .asks { 
+    list-style-type : none;
+    line-height : 25px;
+    font-size: 80%;
+    color : #424242
+}
+
+.card-body {
+    padding : 0px !important; 
+}
+
+.sell {
+    color: red;
+}
+
+.buy {
+    color : green;
+}
+

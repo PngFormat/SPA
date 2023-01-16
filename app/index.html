@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../../../favicon.ico">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <script src="../dist/app-routing.module.js" defer></script>
+  <title>Vanilla SPA </title>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"> <img src="../dist/javascript-js-seeklogo.com.svg"
+        style="width:35px;height:30px"></img><strong>Vanilla SPA</strong></a>
+    <ul class="navbar-nav px-3">
+      <li class="nav-item text-nowrap">
+       <!-- <a class="nav-link" href="#">Sign out</a>-->
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block sidebar">
+        <div class="sidebar-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#home-component" onclick="active(this)">
+                <span data-feather="bar-chart-2" style="color: #6200ee;"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#realtime-component" onclick="active(this)" >
+                <span data-feather="layers" style="color: #6200ee;"></span>
+                Bitcoin Real Time Price
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-component" onclick="active(this)">
+                <span data-feather="layers" style="color: #6200ee;"></span>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main id="root" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Icons -->
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+
+</body>
+
+</html>
