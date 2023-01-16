@@ -7,11 +7,7 @@ module.exports = {
   entry: {
     'app-routing.module': './app/app-routing.module.ts',
     'home-component' : './app/components/home/home.component.ts',
-    'realtime-component' : './app/components/realtime/realtime.component.ts',
     'contact-component' : './app/components/contact/contact.component.ts',
-    'candlestick-component': './app/components/realtime/candlestick/candlestick.component.ts',
-    'orderbook-component': './app/components/realtime/orderbook/orderbook.component.ts',
-    'loader-component': './app/components/loader/loader.component.ts'
   },
   output: {
     filename: '[name].js',
