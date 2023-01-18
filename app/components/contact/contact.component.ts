@@ -12,7 +12,7 @@ export class ContactComponent {
     
     email : any = new Observable('email');
     constructor() {
-       this.email.subscribe('adrienwulfran@gmail.com');
+       this.email.subscribe('@gmail.com');
     }
 
 }

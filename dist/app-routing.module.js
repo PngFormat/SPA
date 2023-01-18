@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Routes\": () => (/* binding */ Routes)\n/* harmony export */ });\n// SINGLE PAGE APPLICATION'S ROUTES \r\nconst Routes = [\r\n    {\r\n        'path': 'home-component'\r\n    },\r\n    {\r\n        'path': 'contact-component'\r\n    },\r\n    {\r\n        'path': 'realtime-component'\r\n    }\r\n];\r\n\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/routes.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Routes\": () => (/* binding */ Routes)\n/* harmony export */ });\n// SINGLE PAGE APPLICATION'S ROUTES \r\nconst Routes = [\r\n    {\r\n        'path': 'home-component'\r\n    },\r\n    {\r\n        'path': 'contact-component'\r\n    },\r\n    {\r\n        'path': 'auth-component'\r\n    }\r\n];\r\n\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/routes.ts?");
 
 /***/ })
 

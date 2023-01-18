@@ -9,7 +9,7 @@ export const  Routes = [
         'path': 'contact-component'
     },
     {
-        'path': 'realtime-component'
+        'path': 'auth-component'
     }
 
 ];
