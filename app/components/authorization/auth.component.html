@@ -1,14 +1,33 @@
-<h4 class="auth" bind-text="auth"></h4>
-<!--<form class='login-form'>-->
-<!--    <div class="flex-row logo">-->
-<!--        <h1>LOGO</h1>-->
-<!--    </div>-->
-<!--    <div class="flex-row">-->
-<!--        <input id="username" class='lf&#45;&#45;input' placeholder='Your username' type='text'>-->
-<!--    </div>-->
-<!--    <div class="flex-row">-->
-<!--        <input id="password" class='lf&#45;&#45;input' placeholder='Your password' type='password'>-->
-<!--    </div>-->
-<!--    <input class='lf&#45;&#45;submit' type='submit' value='Sign Up'>-->
-<!--    <a class='lf&#45;&#45;forgot' href='#'>Already throwing balls? Log In</a>-->
-<!--</form>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <script defer src="/js/login.js"></script>
+</head>
+<body class="login">
+<h4 class="text-center"> Form:  <span bind-text="auth"></span></h4>
+
+<div class="container">
+    <h2 class="">Login</h2>
+    <br>
+    <form action="#" class="loginForm">
+        <div class="input-group">
+            <label for="username" class="label">Username</label>
+            <input type="text" id="username" class="input">
+            <span class="error-message"></span>
+        </div>
+        <br>
+        <div class="input-group">
+            <label for="password" class="label">Password</label>
+            <input type="password" id="password" class="input">
+            <span class="error-message"></span>
+        </div>
+        <br>
+        <button class="button" type="submit">Login</button>
+    </form>
+</div>
+</body>
+</html>

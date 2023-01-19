@@ -9,23 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./app/components/authorization/auth.component.scss":
-/*!**********************************************************!*\
-  !*** ./app/components/authorization/auth.component.scss ***!
-  \**********************************************************/
-/***/ (() => {
-
-eval("throw new Error(\"Module parse failed: Unexpected token (1:11)\\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\\n> $left-color:  #242e4d;\\n| $right-color: #897e79;\\n| $green-dark:  #35c3c1;\");\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/components/authorization/auth.component.scss?");
-
-/***/ }),
-
 /***/ "./app/components/authorization/auth.component.html":
 /*!**********************************************************!*\
   !*** ./app/components/authorization/auth.component.html ***!
   \**********************************************************/
 /***/ ((module) => {
 
-eval("// Module\nvar code = \"<h4 class=\\\"auth\\\" bind-text=\\\"auth\\\"></h4>\\r\\n<!--<form class='login-form'>-->\\r\\n<!--    <div class=\\\"flex-row logo\\\">-->\\r\\n<!--        <h1>LOGO</h1>-->\\r\\n<!--    </div>-->\\r\\n<!--    <div class=\\\"flex-row\\\">-->\\r\\n<!--        <input id=\\\"username\\\" class='lf&#45;&#45;input' placeholder='Your username' type='text'>-->\\r\\n<!--    </div>-->\\r\\n<!--    <div class=\\\"flex-row\\\">-->\\r\\n<!--        <input id=\\\"password\\\" class='lf&#45;&#45;input' placeholder='Your password' type='password'>-->\\r\\n<!--    </div>-->\\r\\n<!--    <input class='lf&#45;&#45;submit' type='submit' value='Sign Up'>-->\\r\\n<!--    <a class='lf&#45;&#45;forgot' href='#'>Already throwing balls? Log In</a>-->\\r\\n<!--</form>-->\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/components/authorization/auth.component.html?");
+eval("// Module\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n<head>\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta http-equiv=\\\"X-UA-Compatible\\\" content=\\\"IE=edge\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <link rel=\\\"stylesheet\\\" href=\\\"/css/style.min.css\\\">\\r\\n    <script defer src=\\\"/js/login.js\\\"></script>\\r\\n</head>\\r\\n<body class=\\\"login\\\">\\r\\n<h4 class=\\\"text-center\\\"> Form:  <span bind-text=\\\"auth\\\"></span></h4>\\r\\n\\r\\n<div class=\\\"container\\\">\\r\\n    <h2 class=\\\"\\\">Login</h2>\\r\\n    <br>\\r\\n    <form action=\\\"#\\\" class=\\\"loginForm\\\">\\r\\n        <div class=\\\"input-group\\\">\\r\\n            <label for=\\\"username\\\" class=\\\"label\\\">Username</label>\\r\\n            <input type=\\\"text\\\" id=\\\"username\\\" class=\\\"input\\\">\\r\\n            <span class=\\\"error-message\\\"></span>\\r\\n        </div>\\r\\n        <br>\\r\\n        <div class=\\\"input-group\\\">\\r\\n            <label for=\\\"password\\\" class=\\\"label\\\">Password</label>\\r\\n            <input type=\\\"password\\\" id=\\\"password\\\" class=\\\"input\\\">\\r\\n            <span class=\\\"error-message\\\"></span>\\r\\n        </div>\\r\\n        <br>\\r\\n        <button class=\\\"button\\\" type=\\\"submit\\\">Login</button>\\r\\n    </form>\\r\\n</div>\\r\\n</body>\\r\\n</html>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/components/authorization/auth.component.html?");
 
 /***/ }),
 
@@ -47,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"AuthComponent\": () => (/* binding */ AuthComponent)\n/* harmony export */ });\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../component */ \"./app/component.ts\");\n/* harmony import */ var _observable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../observable */ \"./app/observable.ts\");\n\r\n\r\nnew _component__WEBPACK_IMPORTED_MODULE_0__.Component().render({\r\n    'path': 'auth-component',\r\n    'template': __webpack_require__(/*! ./auth.component.html */ \"./app/components/authorization/auth.component.html\"),\r\n    'style': __webpack_require__(/*! ./auth.component.scss */ \"./app/components/authorization/auth.component.scss\")\r\n});\r\nclass AuthComponent {\r\n    constructor() {\r\n        this.auth = new _observable__WEBPACK_IMPORTED_MODULE_1__.Observable('auth');\r\n        this.auth.subscribe('authorization');\r\n    }\r\n}\r\nnew AuthComponent();\r\n\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/components/authorization/auth.component.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"AuthComponent\": () => (/* binding */ AuthComponent)\n/* harmony export */ });\n/* harmony import */ var _component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../component */ \"./app/component.ts\");\n/* harmony import */ var _observable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../observable */ \"./app/observable.ts\");\n\r\n\r\nnew _component__WEBPACK_IMPORTED_MODULE_0__.Component().render({\r\n    'path': 'auth-component',\r\n    'template': __webpack_require__(/*! ./auth.component.html */ \"./app/components/authorization/auth.component.html\"),\r\n    // 'style': require('./auth.component.scss')\r\n});\r\nclass AuthComponent {\r\n    validateAuth(auth) {\r\n        if (auth != 1) {\r\n        }\r\n        else {\r\n            document.querySelector(\"body\").style.display = \"block\";\r\n        }\r\n    }\r\n    logOut() {\r\n        localStorage.removeItem(\"auth\");\r\n    }\r\n    constructor() {\r\n        this.auth = new _observable__WEBPACK_IMPORTED_MODULE_1__.Observable('auth');\r\n        this.auth.subscribe('authorization');\r\n        // document.querySelector(\"body\").style.display = \"none\";\r\n        // const auth = localStorage.getItem(\"auth\");\r\n        // this.validateAuth(auth);\r\n    }\r\n}\r\nnew AuthComponent();\r\n\n\n//# sourceURL=webpack://vanilla_spa_framework/./app/components/authorization/auth.component.ts?");
 
 /***/ }),
 
