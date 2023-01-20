@@ -1,0 +1,29 @@
+body .login {
+   display: flex;
+   justify-content: center;
+   background-color: #b4abbe;
+}
+body .container {
+   border-radius:10px ;
+   border: 4px solid black;
+   padding: 50px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   background-color: #82c482;
+}
+body .container .loginForm .button {
+   margin-left: 120px;
+   display: flex;
+   justify-content: center;
+}
+body .container .loginForm .input-type{
+   margin-left: 10px;
+   padding: 20px;
+}
+body .container .loginForm .input-group .label {
+   font-size: 20px;
+   margin-right: 10px;
+
+   text-decoration:dashed;
+}

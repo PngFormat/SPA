@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.min.css">
-    <script defer src="/js/login.js"></script>
+    <link rel="stylesheet" href="./auth.components.css">
+<!--    <script defer src="/js/login.js"></script>-->
 </head>
-<body class="login">
-<h4 class="text-center"> Form:  <span bind-text="auth"></span></h4>
-
+<body class="body-login">
+<h4 class="login"> Form:  <span bind-text="auth"></span></h4>
 <div class="container">
-    <h2 class="">Login</h2>
+
     <br>
     <form action="#" class="loginForm">
+        <h2 class="text-center">Login</h2>
         <div class="input-group">
             <label for="username" class="label">Username</label>
             <input type="text" id="username" class="input">
@@ -21,11 +21,17 @@
         </div>
         <br>
         <div class="input-group">
-            <label for="password" class="label">Password</label>
+            <label for="password" class="label"> Password </label>
             <input type="password" id="password" class="input">
             <span class="error-message"></span>
+            <br>
+
         </div>
-        <br>
+        <div class="input-type">
+            <strong>Are you accept our policy?</strong>
+            <input type="checkbox">
+
+        </div>
         <button class="button" type="submit">Login</button>
     </form>
 </div>
