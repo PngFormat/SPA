@@ -40,6 +40,7 @@ body {
 }
 
 .sidebar .nav-link {
+
   font-weight: 500;
   color: #333;
 }
@@ -69,6 +70,17 @@ body {
 
 [role="main"] {
   padding-top: 80px; /* Space for fixed navbar */
+
+
+
+}
+.main {
+  background-image: url("../app/components/home/backauth.png");
+  background-repeat: no-repeat;
+  background-size: clamp(1700px, 80%, 2000px) auto;
+  height: 800px;
+
+
 }
 
 /*

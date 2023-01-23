@@ -1,18 +1,22 @@
+
 body .login {
    display: flex;
    justify-content: center;
-   background-color: #b4abbe;
+   background-color: green;
+   font-family: Algerian;
+   font-size: 30px;
 }
 body .container {
    border-radius:10px ;
    border: 4px solid black;
    padding: 50px;
-   margin-top: 20px;
+   margin-top: 200px;
    display: flex;
    justify-content: center;
    background-color: #82c482;
+   width:400px
 }
-body .container .loginForm .button {
+body .container .loginForm #btn {
    margin-left: 120px;
    display: flex;
    justify-content: center;
@@ -26,4 +30,24 @@ body .container .loginForm .input-group .label {
    margin-right: 10px;
 
    text-decoration:dashed;
+}
+
+body .help-block #forgot, body .help-block #policy{
+   display: flex;
+   justify-content: center;
+   margin-top: 30px;
+   font-size: 30px;
+   font-family: Algerian;
+   color: black;
+   background-color: green ;
+   opacity: 0.5;
+   margin-left: 300px;
+   margin-right: 200px;
+}
+body .help-block #policy {
+   margin-left:400px;
+
+}
+body .help-block #forgot{
+   margin-right: 300px;
 }
