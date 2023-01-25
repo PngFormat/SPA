@@ -7,6 +7,10 @@ body {
   height: 16px;
   vertical-align: text-bottom;
 }
+body nav {
+  display: flex;
+  align-items: stretch;
+}
 
 /*
  * Sidebar
@@ -40,7 +44,8 @@ body {
 }
 
 .sidebar .nav-link {
-
+  display: flex;
+  align-items: stretch;
   font-weight: 500;
   color: #333;
 }

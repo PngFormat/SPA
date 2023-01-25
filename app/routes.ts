@@ -10,6 +10,9 @@ export const  Routes = [
     },
     {
         'path': 'auth-component'
+    },
+    {
+        'path': 'regis-component'
     }
 
 ];

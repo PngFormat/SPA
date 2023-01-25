@@ -9,6 +9,8 @@ module.exports = {
     'home-component' : './app/components/home/home.component.ts',
     'contact-component' : './app/components/contact/contact.component.ts',
     'auth-component' : './app/components/authorization/auth.component.ts',
+    'regis-component' : './app/components/registration/regis.component.ts',
+
   },
   output: {
     filename: '[name].js',
