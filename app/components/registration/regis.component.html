@@ -12,30 +12,69 @@
 <body>
 <div class="block">
     <div class="block-2">
-        <form name="myForm" action="#" class="loginForm" onsubmit="return validateForm()" method="post" required>
+
+        <form name="myForm" action="#" class="loginForm" style="font-family: 'Comic Sans MS'" onsubmit="return validateForm()" method="post" required>
+<!--            <img src="../app/components/home/Без названия.png"-->
+<!--                 style="width:35px;height:30px">-->
             <h2 class="text-center">Registration</h2>
             <hr>
             <h2 class="text-left">Input information</h2>
-            <div class="input-group">
-                <label for="username" class="label">Username</label>
-                <input required minlength="3" maxlength="15" type="text" placeholder="nickname" id="username" class="input">
+            <div class="input-group-1">
+                <label for="username" class="label" style="font-size: 20px">User</label>
+                <input required minlength="3" maxlength="15" type="text" placeholder="First name" id="username" class="input" style="margin-left: 10px">
+                <h7>First Name</h7>
                 <span class="error-message"></span>
+                <div class="input-group-2">
+                    <input required minlength="3" maxlength="15" type="text" placeholder="Last name" id="lastname" class="input">
+                    <h7>Last Name</h7>
+                    <span class="error-message"></span>
+                </div>
+            </div>
+            <div class="input-age">
+                <label class="label" style="font-size: 20px">Age</label>
+                <input required minlength="3" maxlength="15" type="number" placeholder="age" id="age" class="input" style="margin-left: 100px">
+            </div>
+            <div class="input-male">
+                <label class="label" style="font-size: 20px">Male</label>
+                <select name="gender" style="margin-left: 95px">
+                    <option value="1">Man</option>
+                    <option value="2">Woman</option>
+                </select>
+            </div>
+
+            <div class="input-phone">
+                <label for="phone" class="label" style="font-size: 20px">Contacts</label>
+                <input required minlength="10" maxlength="10" type="number" placeholder="phone" id="phone" class="input" style="margin-left: 10px">
+                <h7>First Name</h7>
+                <span class="error-message"></span>
+                <div class="input-phone-2">
+                    <input required minlength="3" maxlength="15" type="text" placeholder="Last name" id="phone-number" class="input">
+                    <h7>Last Name</h7>
+                    <span class="error-message"></span>
+                </div>
             </div>
             <br>
-            <div class="input-group">
-                <label for="password" class="label"> Password </label>
-                <input required minlength="8"  type="password" placeholder="pass" id="password" class="input">
+            <div class="input-pass">
+                <label for="username" class="label" style="font-size: 20px">Password</label>
+                <input required minlength="3" maxlength="15" type="text" placeholder="password" id="pass" class="input" style="margin-left: 10px">
+                <h7>Pass</h7>
                 <span class="error-message"></span>
-                <br>
-
+                <div class="input-group-2">
+                    <input required minlength="3" maxlength="15" type="text" placeholder="repeat-pass" id="repeat-pass" class="input">
+                    <h7>Repeat</h7>
+                    <span class="error-message"></span>
+                </div>
             </div>
             <div class="input-type">
                 <strong>Are you accept our policy?</strong>
                 <input type="checkbox">
+                <br>
+
 
             </div>
             <button value="Submit" id="btn" type="submit">Login</button>
         </form>
+        <div id="box"></div>
     </div>
 </div>
 

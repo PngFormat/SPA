@@ -1,6 +1,17 @@
 import { Component } from '../../component'
 import {Observable } from '../../observable'
 
+const el = document.createElement('div');
+
+el.textContent = 'bobbyhadz.com';
+
+
+el.setAttribute('title', 'my-title');
+
+
+const box = document.getElementById('box');
+
+box?.appendChild(el);
 
 new Component().render({
     'path': 'regis-component',
@@ -16,4 +27,5 @@ export class RegisComponent {
     }
 
 }
+
 new RegisComponent()

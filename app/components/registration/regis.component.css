@@ -1,6 +1,6 @@
 body .block {
     width: 1500px;
-    height: 800px;
+    height: 850px;
     background-color: #75bd75;
     display: flex;
     justify-content: center;
@@ -11,15 +11,104 @@ body .block .block-2 {
     justify-content: center;
     background-color: #ebebeb;
     padding: 10px;
-    width: 500px;
+    width: 900px;
     margin-bottom: 30px;
     border-radius: 10px;
-
-
 }
 body .block .block-2 .loginForm .text-left {
     font-size: 20px;
 }
 body .block .block-2 .loginForm {
-    width: 400px;
+
+    width: 500px;
+}
+body .block .block-2 .loginForm .input-group-1,body .block .block-2 .loginForm .input-phone, body .block .block-2 .loginForm .input-pass {
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body .block .block-2 .loginForm .input-age,body .block .block-2 .loginForm .input-male{
+
+    margin-top: 40px;
+}
+body .block .block-2 .loginForm .input-type {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+body .block .block-2 .loginForm #btn{
+    font-family: Algerian;
+    border-color: #00ffb2;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slider-containner {
+    background-color: #fafafa;
+    height: 100vh;
+}
+.carusel-containner {
+    max-width: 960px;
+    position: relative;
+    margin: 0 auto;
+    overflow-x: hidden;
+    height: 520px;
+    top: calc(50% - 250px);
+}
+.slider-items-containner {
+    display: flex;
+    position: absolute;
+    max-height: 510px;
+    transition: all 0.8s;
+    left: 0px;
+}
+.slider-items-containner li {
+    list-style-type: none;
+}
+.slider-items-containner img {
+    object-fit: cover;
+}
+
+#left,
+#right {
+    position: absolute;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: calc(50% - 10px);
+    z-index: 3;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+#left {
+    border-left: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: rotate(-45deg);
+    left: 5px;
+    opacity: 0.5;
+}
+
+#right {
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+    transform: rotate(45deg);
+    right: 5px;
+}
+
+#play {
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0px;
+    z-index: 5;
+    left: calc(50% - 15px);
 }
