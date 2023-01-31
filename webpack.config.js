@@ -10,6 +10,7 @@ module.exports = {
     'contact-component' : './app/components/contact/contact.component.ts',
     'auth-component' : './app/components/authorization/auth.component.ts',
     'regis-component' : './app/components/registration/regis.component.ts',
+    'about-component' : './app/components/about/about.component.ts'
 
   },
   output: {

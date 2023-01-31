@@ -13,6 +13,9 @@ export const  Routes = [
     },
     {
         'path': 'regis-component'
+    },
+    {
+        'path': 'about-component'
     }
 
 ];
