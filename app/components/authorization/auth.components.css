@@ -31,6 +31,12 @@ body .container .loginForm .input-group .label {
 
    text-decoration:dashed;
 }
+body .container .loginForm .input-type input{
+   margin-top: 10px;
+   margin-left: 50px;
+   width: 100px;
+   height: 20px;
+}
 
 body .help-block #forgot, body .help-block #policy{
    display: flex;

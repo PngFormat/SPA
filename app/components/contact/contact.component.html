@@ -1,3 +1,39 @@
-<h4> Contact : <span bind-text="email"></span></h4>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.component.css">
+    <script src="./contact.component.ts"></script>
+    <!--    <script defer src="/js/login.js"></script>-->
+</head>
+<main class="main-contact" >
+    <body>
+    <h2 class="title">Contact form</h2><br>
+    <div class="container"style="width: 500px;margin-top: 50px ">
 
+        <form method="post" action="#"  data-module="FormValidator">
 
+            <label for="name">Name</label>
+            <input  id="name" type="text" placeholder="Name" >
+
+            <label for="surname">Surname</label>
+            <input  id="surname" type="text" placeholder="Surname">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Email">
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" placeholder="Comment"></textarea>
+
+            <button class="send" type="submit"> Send Message </button>
+
+        </form>
+    </div>
+    </body>
+
+</html>
+
+</main>
+</html>

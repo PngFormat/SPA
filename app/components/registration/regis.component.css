@@ -9,11 +9,14 @@ body .block .block-2 {
     margin-top: 100px;
     display: flex;
     justify-content: center;
-    background-color: #ebebeb;
+    background-color: #82c482;
     padding: 10px;
     width: 900px;
     margin-bottom: 30px;
     border-radius: 10px;
+}
+body .block {
+    background-color : rgb(6, 125, 125,0.2)
 }
 body .block .block-2 .loginForm .text-left {
     font-size: 20px;
@@ -24,19 +27,23 @@ body .block .block-2 .loginForm {
 }
 body .block .block-2 .loginForm .input-group-1,body .block .block-2 .loginForm .input-phone, body .block .block-2 .loginForm .input-pass {
 
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 body .block .block-2 .loginForm .input-age,body .block .block-2 .loginForm .input-male{
 
-    margin-top: 40px;
+    margin-top: 20px;
 }
 body .block .block-2 .loginForm .input-type {
     margin-top: 30px;
     display: flex;
     justify-content: center;
+}
+body .block .block-2 .loginForm .input-type input{
+    width: 100px;
+    height: 20px;
 }
 body .block .block-2 .loginForm #btn{
     font-family: Algerian;
