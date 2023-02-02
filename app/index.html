@@ -11,13 +11,43 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#"> <img src="../app/components/home/Без названия.png"
-        style="width:35px;height:30px"><strong>Vanilla SPA</strong></a>
+  <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow" style="display: flex;align-items: stretch">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
 
+      <img src="../app/components/home/Без названия.png"
+        style="width:35px;height:30px"><strong>Vanilla SPA</strong></a>
+    <input type="checkbox" id="side-checkbox" />
+    <div class="side-panel">
+      <label class="side-button-2" for="side-checkbox">+</label>
+      <div class="side-title">Выдвижная панель:</div>
+      <a class="nav-link" href="#home-component" onclick="active(this)">
+        <span data-feather="bar-chart-2" style="color: #6200ee;"></span>
+        Home
+      </a>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact-component" onclick="active(this)">
+          <span data-feather="layers" style="color: #6200ee;"></span>
+          Contact
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about-component" onclick="active(this)">
+          <span data-feather="layers" style="color: #6200ee;"></span>
+          About us
+        </a>
+      </li>
+    </div>
+    <div class="side-button-1-wr">
+      <label class="side-button-1" for="side-checkbox">
+        <div class="side-b side-open">Открыть</div>
+        <div class="side-b side-close">Закрыть</div>
+      </label>
+    </div>
     <ul class="nav flex-column">
       <li class="nav-item">
+
         <a class="nav-link" href="#auth-component" onclick="active(this)">
+
           <img src="../app/components/home/auth.png"
                style="width:35px;height:30px">
         </a>
@@ -44,28 +74,14 @@
 
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-md-2 d-none d-md-block sidebar">
+      <nav class="col-md-2 d-md-block sidebar">
         <div class="sidebar-sticky">
+
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#home-component" onclick="active(this)">
-                <span data-feather="bar-chart-2" style="color: #6200ee;"></span>
-                Home
-              </a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-component" onclick="active(this)">
-                <span data-feather="layers" style="color: #6200ee;"></span>
-                Contact
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-component" onclick="active(this)">
-                <span data-feather="layers" style="color: #6200ee;"></span>
-                About us
-              </a>
-            </li>
+
           </ul>
         </div>
       </nav>
@@ -73,6 +89,7 @@
       </main>
     </div>
   </div>
+
 
   <!-- Bootstrap core JavaScript
     ================================================== -->
