@@ -7,6 +7,7 @@
   <meta name="author" content="">
   <link rel="stylesheet" type="text/css" href="./index.css">
   <script src="../dist/app-routing.module.js" defer></script>
+  <script src="./app-routing.module.ts"></script>
   <title>Vanilla SPA </title>
 </head>
 
@@ -19,7 +20,7 @@
     <input type="checkbox" id="side-checkbox" />
     <div class="side-panel">
       <label class="side-button-2" for="side-checkbox">+</label>
-      <div class="side-title">Выдвижная панель:</div>
+      <div class="side-title"></div>
       <a class="nav-link" href="#home-component" onclick="active(this)">
         <span data-feather="bar-chart-2" style="color: #6200ee;"></span>
         Home
@@ -35,13 +36,42 @@
           <span data-feather="layers" style="color: #6200ee;"></span>
           About us
         </a>
-      </li>
+
+        <button id="open-btn" style="margin-top: 40px">
+          Help
+        </button>
+
+        <!-- Modal Background and Modal -->
+        <div id="modal-background" style="color: black">
+          <div id="modal">
+            <span id="close-btn">&times;</span>
+            <h2>Help Pop-Up</h2>
+            <p style="font-size: 20px">  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              It was popularised in the 1960s with the release of
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+              PageMaker including versions of Lorem Ipsum.</p>
+            <div class="buttons">
+              <button id="yes">
+                Close
+              </button>
+
+            </div>
+          </div>
+        </div>
     </div>
     <div class="side-button-1-wr">
       <label class="side-button-1" for="side-checkbox">
         <div class="side-b side-open">Открыть</div>
         <div class="side-b side-close">Закрыть</div>
       </label>
+
+
+
+
+
+
     </div>
     <ul class="nav flex-column">
       <li class="nav-item">

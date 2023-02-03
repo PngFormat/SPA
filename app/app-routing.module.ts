@@ -6,10 +6,10 @@ declare module window {
     let onhashchange:any;
     let active: any;
 }
-// render 
+// render
 import { Routes } from './routes';
 
-// SINGLE PAGE APPLICATION'S ROUTES 
+// SINGLE PAGE APPLICATION'S ROUTES
 export class Router {
 
     constructor() {
@@ -53,4 +53,39 @@ export class Router {
 
 }
 
+
+
 new Router();
+
+// select the open-btn button
+let openBtn = document.getElementById('open-btn');
+// select the modal-background
+let modalBackground = document.getElementById('modal-background');
+// select the close-btn
+let closeBtn = document.getElementById('close-btn');
+
+let closeBtn2 = document.getElementById('yes')
+
+// shows the modal when the user clicks open-btn
+openBtn.addEventListener('click', function() {
+    modalBackground.style.display = 'block';
+});
+
+// hides the modal when the user clicks close-btn
+closeBtn.addEventListener('click', function() {
+    modalBackground.style.display = 'none';
+});
+
+closeBtn2.addEventListener('click', function() {
+    modalBackground.style.display = 'none';
+});
+
+
+// hides the modal when the user clicks outside the modal
+// windows.addEventListener('click', function(event: { target: HTMLElement; }) {
+//     // check if the event happened on the modal-background
+//     if (event.target === modalBackground) {
+//         // hides the modal
+//         modalBackground.style.display = 'none';
+//     }
+// });
